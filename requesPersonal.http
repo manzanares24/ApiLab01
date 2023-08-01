@@ -1,0 +1,27 @@
+#Rutas Personal
+###
+GET http://localhost:3000/personal HTTP/1.1
+
+###
+POST http://localhost:3000/personal HTTP/1.1
+Content-Type: application/json
+
+{
+  "Nombre": "Juan", 
+  "Apellidos": "Perez Alvarado", 
+  "Cedula": 209990876, 
+  "Teléfono": 23456789
+}
+
+###
+DELETE  http://localhost:3000/personal/209990876 HTTP/1.1
+
+###
+PUT http://localhost:3000/personal/209990876 HTTP/1.1
+Content-Type: application/json
+
+{
+  "Nombre": "Alvaro", 
+  "Apellidos": "Perez Alvarado",
+  "Teléfono": 88888888
+}
